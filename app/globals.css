@@ -1,0 +1,43 @@
+:root {
+  color-scheme: light;
+  font-family: 'Geist', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+  background: #fffff8;
+  color: #111;
+
+  --grey: rgb(187, 187, 187);
+  --lghtgrey: rgb(230, 230, 230);
+  --green: #018A08;
+  --amber: #FFA500;
+  --bg: #fffff8;
+  --text: #111;
+  --text-muted: rgba(17, 17, 17, 0.62);
+  --text-faint: rgba(17, 17, 17, 0.48);
+  --surface: rgba(17, 17, 17, 0.06);
+  --border: rgba(17, 17, 17, 0.14);
+  --divider: rgba(17, 17, 17, 0.12);
+  --tooltip-bg: rgba(255, 255, 248, 0.98);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top, rgba(255, 165, 0, 0.1), transparent 42%),
+    radial-gradient(circle at bottom, rgba(1, 138, 8, 0.08), transparent 40%),
+    var(--bg);
+  color: var(--text);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
