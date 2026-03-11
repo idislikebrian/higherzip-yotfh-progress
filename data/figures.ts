@@ -27,7 +27,7 @@ export const costGroups: CostGroup[] = [
     category: "Production",
     items: [
       { label: "Calendar Prints", amount: 315.74 },
-      { label: "Inbound Shipping (to Sean)", amount: 39.72 },
+      { label: "Inbound Shipping (to @colfaxxx)", amount: 39.72 },
       { label: "Acrylic Stands (50 pcs)", amount: 291.43 },
       {
         label: "Prototypes (R&D)",
@@ -42,17 +42,17 @@ export const costGroups: CostGroup[] = [
       {
         label: "Slice International",
         amount: 245,
-        notes: "Business expense (Sean's CC)"
+        notes: "Business expense (@colfaxxx's CC)"
       },
       {
         label: "Slice Domestic",
         amount: 60,
-        notes: "Business expense (Sean's CC)"
+        notes: "Business expense (@colfaxxx's CC)"
       },
       {
         label: "Shopify Fulfillment",
         amount: 68.98,
-        notes: "Business expense (Cameron's CC)"
+        notes: "Business expense (@kompreni's CC)"
       }
     ]
   }

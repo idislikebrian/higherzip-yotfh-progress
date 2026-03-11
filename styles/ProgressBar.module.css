@@ -2,7 +2,6 @@
   width: min(100%, 38rem);
   display: grid;
   gap: 1rem;
-  justify-items: center;
 }
 
 .track {
@@ -10,16 +9,15 @@
   height: 1.25rem;
   background: var(--surface);
   border: 1px solid var(--border);
-  border-radius: 0;
   overflow: hidden;
-  box-shadow: inset 0 0 0 1px rgba(230, 230, 230, 0.04);
+  box-shadow: 4px 4px 0px rgba(0, 0, 0, 1);
 }
 
 .fill {
   height: 100%;
   width: 0;
-  border-radius: 0;
-  background: linear-gradient(90deg, var(--green) 0%, var(--amber) 100%);
+  border-radius: inherit;
+  background: var(--bright-green);
   transition: width 1.2s ease-out, background-color 0.6s ease;
 }
 
@@ -38,7 +36,6 @@
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1rem;
-  width: 100%;
 }
 
 .label {
@@ -58,6 +55,5 @@
 @media (max-width: 640px) {
   .meta {
     grid-template-columns: 1fr;
-    text-align: center;
   }
 }
