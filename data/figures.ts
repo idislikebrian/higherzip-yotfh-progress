@@ -4,6 +4,8 @@ export type FinancialItem = {
   notes?: string;
 };
 
+export const calendarPrice = 44.44;
+
 export type CostGroup = {
   category: string;
   items: FinancialItem[];
@@ -90,4 +92,30 @@ export function getBreakEvenProgress(): number {
   }
 
   return Math.min(Math.max(getTotalRevenue() / breakEvenGoal, 0), 1);
+}
+
+export function getProfitAfterBreakEven(): number {
+  return Math.max(getTotalRevenue() - getTotalCosts(), 0);
+}
+
+export function getPerArtistProfitShare(artistCount: number): number {
+  if (artistCount <= 0) {
+    return 0;
+  }
+
+  return getProfitAfterBreakEven() / artistCount;
+}
+
+export function getRemainingAmountToBreakEven(): number {
+  return Math.max(getTotalCosts() - getTotalRevenue(), 0);
+}
+
+export function getCalendarsNeededToBreakEven(unitPrice: number): number {
+  if (unitPrice <= 0) {
+    return 0;
+  }
+
+  const remaining = getRemainingAmountToBreakEven();
+
+  return remaining > 0 ? Math.ceil(remaining / unitPrice) : 0;
 }
