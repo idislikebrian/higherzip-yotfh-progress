@@ -29,18 +29,18 @@ export default function BreakEvenCalculator({
           <p className={styles.eyebrow}>Break-Even Units</p>
           <h2 id="break-even-units-heading" className={styles.title}>
             {isAtBreakEven
-              ? "The calendar has already cleared break-even"
-              : `${calendarsNeeded} more calendars to break even`}
+              ? "Break-even is dead. Everything from here is extra."
+              : `${calendarsNeeded} more calendars until this thing stops being expensive performance art`}
           </h2>
           <p className={styles.description}>
             {isAtBreakEven
-              ? `At the current totals, every additional sale above ${formatCurrency(unitPrice)} contributes to profit beyond break-even.`
-              : `${formatCurrency(remainingAmount)} remains before break-even. At ${formatCurrency(unitPrice)} per calendar, that comes out to ${calendarsNeeded} more sales.`}
+              ? `Costs are covered. Every calendar sold above ${formatCurrency(unitPrice)} now lands on the profitable side of the spreadsheet.`
+              : `${formatCurrency(remainingAmount)} is still standing between us and financial closure. At ${formatCurrency(unitPrice)} per calendar, that works out to ${calendarsNeeded} more people deciding they need one.`}
           </p>
         </div>
 
         <a href="#buy" className={styles.action}>
-          Jump to buy options
+          BUY YOURS
         </a>
       </div>
     </section>

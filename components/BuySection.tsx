@@ -9,12 +9,12 @@ const CREDIT_CARD_URL =
 const product = {
   title: "Higher Calendar",
   shortDescription:
-    "A collaborative calendar designed to carry momentum through the year",
+    "A functional object for people who want their wall to apply pressure",
   price: "$44.44",
   description:
-    "Year of the Fire Horse is built to live either on your wall or upright on your desk. Functional, sculptural, and designed to be marked up, pinned, rearranged, and lived with.",
+    "Year of the Fire Horse is built to live on your wall or stand upright on your desk. Part calendar, part device, part evidence that you intended to do something with your year.",
   details:
-    "Each small-batch set includes the calendar, an acrylic stand, two Higher pencils, a push pin, at least one magnet, and a paper cover variant."
+    "Each set includes the calendar, an acrylic stand, two Higher pencils, a push pin, at least one magnet, and a paper cover variant."
 };
 
 const images = [
@@ -34,9 +34,9 @@ export default function BuySection() {
   return (
     <section id="buy" className={styles.section} aria-labelledby="buy-heading">
       <div className={styles.heading}>
-        <p className={styles.eyebrow}>Calendar Promo</p>
+        <p className={styles.eyebrow}>Object for Sale</p>
         <h2 id="buy-heading" className={styles.title}>
-          A small-batch calendar designed to be used hard
+          A small-batch calendar for public accountability and private delusion
         </h2>
       </div>
 
@@ -64,14 +64,13 @@ export default function BuySection() {
         </div>
 
         <div className={styles.card}>
-          <p className={styles.productEyebrow}>Small-Batch Release</p>
           <h3 className={styles.productTitle}>{product.title}</h3>
           <p className={styles.shortDescription}>{product.shortDescription}</p>
           <p className={styles.description}>{product.description}</p>
           <p className={styles.details}>{product.details}</p>
           <p className={styles.priceLine}>
             <span className={styles.price}>{product.price}</span>
-            <span className={styles.priceMeta}>Small-batch release</span>
+            <span className={styles.priceMeta}>Tools included</span>
           </p>
 
           <div className={styles.actions}>
@@ -81,7 +80,7 @@ export default function BuySection() {
               rel="noreferrer"
               className={styles.primaryAction}
             >
-              Buy with USDC
+              Acquire with USDC
             </a>
             <a
               href={CREDIT_CARD_URL}
@@ -89,7 +88,7 @@ export default function BuySection() {
               rel="noreferrer"
               className={styles.secondaryAction}
             >
-              Buy with Credit Card
+              Acquire with Card
             </a>
           </div>
         </div>

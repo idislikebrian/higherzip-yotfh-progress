@@ -31,15 +31,15 @@ export default function ProfitShare({
       <div className={styles.header}>
         <p className={styles.eyebrow}>Artist Profit Share</p>
         <h2 id="profit-share-heading" className={styles.title}>
-          Profit only starts after the calendar breaks even
+          Nobody gets rich until the object pays for itself
         </h2>
       </div>
 
       <div className={styles.card}>
         <p className={styles.summary}>
           {hasProfit
-            ? `The calendar is above cost, so profit is now split across ${artistCount} artists.`
-            : `The calendar is still below cost, so the current artist share is $0.00.`}
+            ? `The costs have been handled, so the upside is now being sliced across ${artistCount} artists.`
+            : `We are still in reimbursement mode, so the current artist share remains $0.00.`}
         </p>
 
         <div className={styles.stats}>
@@ -58,9 +58,7 @@ export default function ProfitShare({
         </div>
 
         <p className={styles.note}>
-          Based on current totals: {formatCurrency(totalRevenue)} revenue minus{" "}
-          {formatCurrency(totalCosts)} costs, with any amount above break-even split
-          evenly among {artistCount} artists.
+          Current math: {formatCurrency(totalRevenue)} in revenue, {formatCurrency(totalCosts)} in costs, and anything above that line gets split evenly between {artistCount} artists.
         </p>
       </div>
     </section>

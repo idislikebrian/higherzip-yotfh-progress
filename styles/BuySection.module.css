@@ -2,6 +2,7 @@
   width: min(100%, 62rem);
   display: grid;
   gap: 1.5rem;
+  margin: 100px auto;
 }
 
 .heading {
@@ -42,7 +43,6 @@
 .mainImageFrame {
   border: 1px solid var(--border);
   background: rgba(255, 255, 255, 0.82);
-  box-shadow: 4px 4px 0 rgba(0, 0, 0, 1);
   overflow: hidden;
 }
 
@@ -75,9 +75,7 @@
   display: grid;
   gap: 0.95rem;
   padding: 1.35rem;
-  border: 1px solid var(--border);
-  background: rgba(255, 255, 255, 0.82);
-  box-shadow: 4px 4px 0 rgba(0, 0, 0, 1);
+
   text-align: left;
 }
 
@@ -128,7 +126,7 @@
 .price {
   color: var(--green);
   font-size: 1.2rem;
-  font-weight: 700;
+  font-weight: 500;
   letter-spacing: -0.03em;
 }
 
