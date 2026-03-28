@@ -14,12 +14,12 @@ export type CostGroup = {
 export const revenue: FinancialItem[] = [
   {
     label: "Shopify Sales",
-    amount: 343.14,
+    amount: 387.14, // was 343.14, +44.00 (Basil)
     notes: "Customer pays shipping"
   },
   {
     label: "Slice Sales",
-    amount: 355.52,
+    amount: 443.52, // was 355.52, +44.00 (mjc) +44.00 (Victor, placeholder)
     notes: "HZIP pays shipping"
   }
 ];
@@ -48,12 +48,12 @@ export const costGroups: CostGroup[] = [
       },
       {
         label: "Slice Domestic",
-        amount: 60,
+        amount: 114.32, // was 60, +37.62 (apiip artist shipment) +8.35 (mjc) +8.35 (Victor, placeholder)
         notes: "Business expense (@colfaxxx's CC)"
       },
       {
         label: "Shopify Fulfillment",
-        amount: 68.98,
+        amount: 77.33, // was 68.98, +8.35 (Basil)
         notes: "Business expense (@kompreni's CC)"
       }
     ]
